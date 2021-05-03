@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SsnComponent implements OnInit {
 
+  hideSsn: boolean = true;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  eyeToggle(setEye: boolean) {
+    this.hideSsn = setEye;
+  }
 }

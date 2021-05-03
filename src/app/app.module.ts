@@ -8,12 +8,20 @@ import { MaterialModule } from './material.module';
 
 import { SsnComponent } from './ssn/ssn.component';
 import { ButtonComponent } from './material/button/button.component';
+import { TextboxComponent } from './material/textbox/textbox.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { LoginComponent } from './auth/login/login.component';
+import { WelcomeComponent } from './fitness/welcome/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SsnComponent,
-    ButtonComponent
+    ButtonComponent,
+    TextboxComponent,
+    SignupComponent,
+    LoginComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

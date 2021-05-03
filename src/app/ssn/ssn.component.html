@@ -1,2 +1,13 @@
 <p>SSN Masking</p>
-<input type="text" />
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Enter SSN</mat-label>
+    <input matInput placeholder="SSN" />
+  </mat-form-field>
+  <a class="eye-icon" (click)="eyeToggle(false)" *ngIf="hideSsn">
+    <span class="material-icons"> visibility </span>
+  </a>
+  <a class="eye-icon" (click)="eyeToggle(true)" *ngIf="!hideSsn">
+    <span class="material-icons"> visibility_off </span>
+  </a>
+</form>
