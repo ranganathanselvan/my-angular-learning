@@ -1,0 +1,30 @@
+<div class="list-group">
+  <a
+    *ngFor="let person of listPerson; let i = index"
+    class="list-group-item list-group-item-action flex-column align-items-start"
+    (click)="selectedPersonEvent(i)"
+  >
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{ person.firstName + " " + person.lastName }}</h5>
+      <small>3 days ago</small>
+    </div>
+    <p class="mb-1">{{ person.designation }}</p>
+    <small>{{ person.organizationName }}</small>
+  </a>
+  <!-- <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">Holly Branson</h5>
+        <small class="text-muted">3 days ago</small>
+      </div>
+      <p class="mb-1">Chief Purpose and Vision Officer</p>
+      <small class="text-muted">Virgin</small>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">Sharon Vincent</h5>
+        <small class="text-muted">3 days ago</small>
+      </div>
+      <p class="mb-1">Package Implementation Consultant</p>
+      <small class="text-muted">LTI - Larsen & Toubro Infotech</small>
+    </a> -->
+</div>

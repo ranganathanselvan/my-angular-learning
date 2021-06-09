@@ -1,0 +1,9 @@
+<div class="row"></div>
+<div class="row">
+    <div class="col-md-5">
+        <app-people-list (selectedPersonToSibling)="sendPersonParentToChild($event)"></app-people-list>
+    </div>
+    <div class="col-md-7">
+        <app-people-details *ngIf="showPersonDetails" [selectedPersonDetails]="selectedPerson"></app-people-details>
+    </div>
+</div>
